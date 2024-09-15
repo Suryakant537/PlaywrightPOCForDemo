@@ -16,7 +16,7 @@ test.describe("test for validation negative scenarios", () => {
     test('Test to validate login with blank username and blank password',async () => {
         await utils.gotoUrl('login');
         await login.Login("",""); 
-        await login.verifyErrorMessage("Username/Email and password are requireds.");
+        await login.verifyErrorMessage("Username/Email and password are required.");
     });
     test('Test to validate login with username and no password',async () => {
         await utils.gotoUrl('login');
