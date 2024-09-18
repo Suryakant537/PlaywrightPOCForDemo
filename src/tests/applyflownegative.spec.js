@@ -12,7 +12,7 @@ test.describe("test for validation negative scenarios", () => {
         pomanager=new POManager(page);
         utils=pomanager.getUtility();
         login=pomanager.getLoginScreenpage();
-    })
+    });
     test('Test to validate login with blank username and blank password',async () => {
         await utils.gotoUrl('login');
         await login.Login("",""); 
